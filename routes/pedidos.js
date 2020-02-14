@@ -18,7 +18,7 @@ router.post('/', (req, res, next) => {
 // http://localhost:3000/pedidos/2000
 // Retorna os dados de um Pedido
 router.get('/:id_pedido', (req, res, next) => {
-    const id = req.params.id_produto;
+    const id = req.params.id_pedido;
     res.status(200).send({
         mensagem: 'Detalhes do pedido',
         id_pedido: id
